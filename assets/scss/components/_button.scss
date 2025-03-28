@@ -3,9 +3,9 @@
 .cta-primary {
     padding: 12px 24px;
     border-radius: variable.$radius10;
-    color: variable.$second-color;
+    color: variable.$white;
     text-decoration: none;
-    background: linear-gradient(45deg, variable.$third-color, variable.$fifth-color);
+    background: linear-gradient(45deg, variable.$forest, variable.$apple);
     background-size: 200% 200%;
     animation: move 1s infinite alternate;
     transition: 0.2s;
@@ -23,8 +23,8 @@
 
 .btn-primary {
     text-decoration: variable.$deconone;
-    color: variable.$second-color;
-    background-color: variable.$third-color;
+    color: variable.$white;
+    background-color: variable.$forest;
     padding: 12px 18px;
     border-radius: variable.$radius10;
 }

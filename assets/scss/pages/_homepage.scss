@@ -10,6 +10,13 @@
     .hero-img img{
         width: 100%;
         border-top-left-radius: variable.$radius10;
-        box-shadow: 8px 8px 2px 2px variable.$third-color ;
+        box-shadow: 8px 8px 2px 2px variable.$forest;
     }
+}
+
+.projet-card {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
