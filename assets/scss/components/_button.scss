@@ -1,0 +1,22 @@
+@use "../abstracts/variables" as variable;
+
+.cta-primary {
+    padding: 12px 24px;
+    border-radius: 10px;
+    color: variable.$second-color;
+    text-decoration: none;
+    background: linear-gradient(45deg, variable.$third-color, variable.$fifth-color);
+    background-size: 200% 200%;
+    animation: move 1s infinite alternate;
+    transition: 0.2s;
+  }
+  
+  @keyframes move {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.cta-primary:hover {
+  box-shadow: 0 0 10px rgba(121, 158, 41, 0.8);
+  transition: 0.2s ease-in-out;
+}

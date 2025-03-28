@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #faf2e7;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.cta-primary {
+  padding: 12px 24px;
+  border-radius: 10px;
+  color: #faf2e7;
+  text-decoration: none;
+  background: linear-gradient(45deg, #054d3b, #799e29);
+  background-size: 200% 200%;
+  animation: move 1s infinite alternate;
+  transition: 0.2s;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+.cta-primary:hover {
+  box-shadow: 0 0 10px rgba(121, 158, 41, 0.8);
+  transition: 0.2s ease-in-out;
+}
+
+.header__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__wrapper img {
+  width: 10%;
+}
+
+/*# sourceMappingURL=style.css.map */

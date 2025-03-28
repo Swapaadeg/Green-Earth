@@ -1,0 +1,14 @@
+// elements globaux (body h1 h2 p ul a)
+@use "../abstracts/variables" as variable;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: variable.$second-color;
+}
+
+h1 {
+
+}
