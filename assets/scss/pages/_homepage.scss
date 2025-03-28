@@ -1,0 +1,15 @@
+@use "../abstracts/variables" as variable;
+
+.hero__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    gap: 4rem;
+    .hero-img img{
+        width: 100%;
+        border-top-left-radius: variable.$radius10;
+        box-shadow: 8px 8px 2px 2px variable.$third-color ;
+    }
+}

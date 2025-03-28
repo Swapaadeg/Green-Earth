@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as variable;
+
+
+.btn-primary {
+    text-decoration: variable.$deconone;
+    color: variable.$second-color;
+    background-color: variable.$third-color;
+    padding: 12px 18px;
+    border-radius: variable.$radius10;
+}
