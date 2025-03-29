@@ -1,3 +1,5 @@
 @use "../abstracts/variables" as variable;
 
-
+.lien-souligne {
+    color: variable.$orange;
+}

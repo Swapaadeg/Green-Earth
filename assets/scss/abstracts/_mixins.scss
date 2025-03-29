@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as variable;
+
+@mixin carte {
+    background-color: variable.$white;
+    border-radius: variable.$radius10;
+    width: 32%;
+}

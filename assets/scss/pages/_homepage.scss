@@ -32,7 +32,6 @@
         background-color: variable.$white;
         border-radius: variable.$radius10;
         padding: 3rem;
-    }
         .mission-content {
             display: flex;
             align-items: center;
@@ -48,15 +47,45 @@
                 ul {
                     padding: 0;
                     margin-bottom: 3rem;
-
                     li{
                         padding: 0.5rem;
                         list-style: none;
                     }
                 }
             }
-                
-        
-    
+        }
+    }
+}
+
+.actualites__wrapper {
+    .climat-actu {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        margin-bottom: 2rem;
+        width: 100%;
+        height: 30vh;
+        img {
+            width: 49%;
+            height: 30vh;
+            object-fit: cover;
+            border-radius: variable.$radius20;
+        }
+        .climat-card {
+            background-color: variable.$white;
+            width: 49%;
+            height: 30vh;
+            padding: 4rem;
+            border-radius: variable.$radius20;
+        }
+    }
+    .cards-actu {
+        display: flex;
+        gap: 3rem;
+        .dechets {
+            .lien-souligne {
+                margin-top: 3rem;
+            }
+        }
     }
 }

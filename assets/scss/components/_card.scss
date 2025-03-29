@@ -1,9 +1,9 @@
 @use "../abstracts/variables" as variable;
+@use "../abstracts/mixins" as mixins;
 
+// CARTE AVEC BORDER 
 .card {
-    background-color: variable.$white;
-    border-radius: variable.$radius10;
-    width: 32%;
+    @include mixins.carte;
     height: 50%;
     padding: 1.5rem;
     h3::after {
@@ -13,4 +13,25 @@
         height: 1px;
         background-color: variable.$grey;
     }
+}
+
+// CARTE AVEC IMAGE
+.cards {
+    display: flex;
+    flex-direction: column;
+    @include mixins.carte;
+    height: 50vh;
+    overflow: auto;
+    padding: 1rem;
+    img {
+        width: 100%;
+        height: 45%;
+        object-fit: cover;
+        border-radius: variable.$radius20;
+    }
+    a {
+        width: 25%;
+        margin-top: 1rem;
+    }
+
 }

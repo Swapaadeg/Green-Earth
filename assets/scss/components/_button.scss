@@ -20,7 +20,7 @@
 
 // HOVER CTA PRIMARY
 .cta-primary:hover {
-  box-shadow: 0 0 10px rgba(121, 158, 41, 0.8);
+  box-shadow: 0 0 10px variable.$apple;
   transition: 0.2s ease-in-out;
 }
 
@@ -31,4 +31,29 @@
     background-color: variable.$forest;
     padding: 12px 18px;
     border-radius: variable.$radius10;
+}
+
+.btn-primary:hover {
+  color: variable.$forest;
+  background-color: variable.$beige;
+  box-shadow: 0 0 10px variable.$forest;
+  transition: 0.2s ease-in-out;
+}
+
+// BTN MINEUR
+.mineur-btn {
+  background-color: variable.$white;
+  padding: 3px 6px;
+  color: variable.$black;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: variable.$radius20;
+  border: variable.$grey solid 2px;
+  text-align: center;
+}
+
+.mineur-btn:hover {
+  background-color: variable.$grey;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 0 10px variable.$black;
 }
