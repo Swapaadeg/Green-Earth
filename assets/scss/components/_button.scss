@@ -1,5 +1,7 @@
 @use "../abstracts/variables" as variable;
 
+
+// Bouton dégradé CTA
 .cta-primary {
     padding: 12px 24px;
     border-radius: variable.$radius10;
@@ -16,11 +18,13 @@
     100% { background-position: 100% 50%; }
 }
 
+// HOVER CTA PRIMARY
 .cta-primary:hover {
   box-shadow: 0 0 10px rgba(121, 158, 41, 0.8);
   transition: 0.2s ease-in-out;
 }
 
+// BTN PRIMARY
 .btn-primary {
     text-decoration: variable.$deconone;
     color: variable.$white;

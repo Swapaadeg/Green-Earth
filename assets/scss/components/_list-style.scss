@@ -1,16 +1,16 @@
 @use "../abstracts/variables" as variable;
 
+// RONDS VERTS SANS BG
 li {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
 }
-
-li::before {
-    content: ""; 
-    width: 6px; 
-    height: 6px;
-    border-radius: 50%; 
-    border: 3px solid variable.$forest;
-    margin-right: 1rem;
-}
+    
+    li::before {
+        content: ""; 
+        width: 6px; 
+        height: 6px;
+        border-radius: 50%; 
+        border: 3px solid variable.$forest;
+        margin-right: 1rem;
+    }
