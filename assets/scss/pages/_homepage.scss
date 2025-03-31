@@ -25,37 +25,41 @@
     background-image: url(../../assets/img/farmer-bg.jpg);
     background-position: center;
     background-size: cover;
-    height: 75vh;
-    padding-top: 8rem;
+    padding: 8rem 0;
     .mission__wrapper {
-        width: 90vw;
         background-color: variable.$white;
         border-radius: variable.$radius10;
         padding: 3rem;
-        .mission-content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: -2rem;
+        display: flex;
+        align-items: center;
+        .mission-text {
+            width: 70%;
+        }
+        .mission-img {
+            width: 30%;
+            height: 60%;
+            object-fit: cover;
             img {
-                width: 35%;
                 border-radius: variable.$radius10;
+                width: 100%;
             }
-            .mission-list {
+        }
+        .mission-list {
+            ul {
                 display: flex;
-                gap: 1rem;
-                ul {
-                    padding: 0;
-                    margin-bottom: 3rem;
-                    li{
-                        padding: 0.5rem;
-                        list-style: none;
-                    }
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                margin-bottom: 3rem;
+                li{
+                    padding: 0.5rem;
+                    list-style: none;
+                    flex: 1 1 45%;
                 }
             }
         }
     }
 }
+
 
 #actualites {
     margin-bottom: 6rem;
@@ -124,6 +128,9 @@ footer {
             }
             h3 {
                 text-decoration: underline;
+            }
+            .google {
+                border-radius: variable.$radius20;
             }
         }
         .copy {
