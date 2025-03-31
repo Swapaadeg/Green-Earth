@@ -135,13 +135,13 @@
         <section id="galerie">
             <div class="gallerie__wrapper container">
                 <h2>Galerie</h2>
-                <div class="grid">
+                <div class="gallerie-grid">
                     <img src="assets/img/gallery-1.jpg" alt="Le tri des déchets chez soi" class="one">
                     <img src="assets/img/gallery-2.jpg" alt="Affiche planète Earth First" class="two">
                     <img src="assets/img/gallery-3.jpg" alt="Les falaises et l'océan" class="three">
                     <img src="assets/img/gallery-4.jpg" alt="Une dame agée souriante qui travaille dans les champs" class="four">
                     <img src="assets/img/gallery-5.jpg" alt="Une dame âgée qui porte sur son dos une charge lourde" class="five">
-                    <img src="assets/img/gallery-6.jpg" alt="Un troupeau de moutons, leur berger et un coucher de soleil" class="6">
+                    <img src="assets/img/gallery-6.jpg" alt="Un troupeau de moutons, leur berger et un coucher de soleil" class="six">
                 </div>
             </div>
         </section>
@@ -150,16 +150,71 @@
             <div class="videos__wrapper container">
                 <h2>Vidéos</h2>
                 <div class="videos-card">
-                    <video src="https://www.youtube.com/watch?v=rWU7feR26kk"></video>
-                    <video src="https://www.youtube.com/watch?v=niZPFYN6J10"></video>
-                    <video src="https://www.youtube.com/watch?v=QpQ9MPj6Zk8"></video>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/rWU7feR26kk?si=CtgN2uX8y6-TkkXv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/niZPFYN6J10?si=4Z7N7Cr7exXBuquj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/QpQ9MPj6Zk8?si=VqFWO-R6dvz_Th9R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <a href="videos" class="btn-secondary">Voir + de vidéos</a>
-            </div>
-            
+            </div> 
         </section>
 
+        <section id="banner-cta">
+            <div class="banner-cta__wrapper container">
+                <div class="banner-cta-content">
+                    <h2>Faire un Don</h2>
+                    <p>Votre soutien est essentiel pour mener à bien nos actions. Chaque don compte.</p>
+                </div>
+                <a href="ctadon" class="cta-secondary">Faire un don maintenant</a>
+            </div>
+        </section>
+
+        <section id="partners">
+            <div class="partners__wrapper container">
+                <h2>With the support of</h2>
+                <div class="partners-img">
+                    <img src="assets/img/ue.svg" alt="Co-funded by the European Union">
+                    <img src="assets/img/ministere-transition-eco.png" alt="Ministère de la transition écologique logo">
+                    <img src="assets/img/swift-logo-color.svg" alt="SWIFT logo">
+                    <img src="assets/img/confederation-suisse.svg" alt="Logo de la Suisse">
+                </div>
+            </div>
+        </section>  
     </main>
+
+    <footer>
+        <div class="footer__wrapper container">
+            <div class="navfooter">
+                <div class="nav apropos">
+                    <h3>À propos</h3>
+                    <p>Green Earth est une ONG dédiée à la protection de l'environnement et à la sensibilisation du public.</p>
+                </div>
+                <div class="nav liens">
+                    <h3>Liens Utiles</h3>
+                    <ul>
+                        <li><a href="apropos" class="link-footer">À propos</a></li>
+                        <li><a href="projets" class="link-footer">Projets</a></li>
+                        <li><a href="campagnes" class="link-footer">Campagnes</a></li>
+                        <li><a href="blog" class="link-footer">Blog</a></li>
+                        <li><a href="don" class="link-footer">Faire un don</a></li>
+                    </ul>
+                </div>
+                <div class="nav mentions">
+                    <h3>Mentions Légales</h3>
+                    <ul>
+                        <li><a href="conditions" class="link-footer">Conditions Générales d'Utilisation</a></li>
+                        <li><a href="mentions" class="link-footer">Mentions légales</a></li>
+                        <li><a href="confidentialite" class="link-footer">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="nav map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5250.125311674014!2d2.315549993579102!3d48.857015600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66502bdbc6419%3A0x648bfe587910cda2!2sMinist%C3%A8re%20de%20la%20Transition%20%C3%A9cologique!5e0!3m2!1sfr!2sfr!4v1743418969540!5m2!1sfr!2sfr" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <p class="copy">&copy Green Earth. Tous droits réservés.</p>
+        </div>
+    </footer>
     
 </body>
 </html>

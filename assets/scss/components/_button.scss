@@ -3,7 +3,7 @@
 
 // Bouton dégradé CTA
 .cta-primary {
-    padding: 12px 24px;
+    padding: variable.$btn-padding;
     border-radius: variable.$radius10;
     color: variable.$white;
     text-decoration: none;
@@ -18,10 +18,28 @@
     100% { background-position: 100% 50%; }
 }
 
-// HOVER CTA PRIMARY
 .cta-primary:hover {
   box-shadow: 0 0 10px variable.$apple;
   transition: 0.2s ease-in-out;
+}
+
+// CTA SECONDARY
+.cta-secondary {
+  text-decoration: variable.$deconone;
+  color: variable.$forest;
+  background-color: variable.$white;
+  padding: variable.$btn-padding;
+  border-radius: variable.$radius10;
+  align-self: center;
+  cursor: pointer;
+}
+
+.cta-secondary:hover {
+  background-color: variable.$forest;
+  color: variable.$white;
+  box-shadow: 0 0 10px variable.$forest;
+  transition: 0.2s ease-in-out;
+
 }
 
 // BTN PRIMARY
@@ -29,7 +47,7 @@
     text-decoration: variable.$deconone;
     color: variable.$white;
     background-color: variable.$forest;
-    padding: 12px 18px;
+    padding: variable.$btn-padding;
     border-radius: variable.$radius10;
 }
 
@@ -38,6 +56,24 @@
   background-color: variable.$beige;
   box-shadow: 0 0 10px variable.$forest;
   transition: 0.2s ease-in-out;
+}
+
+// BTN SECONDARY 
+
+.btn-secondary {
+  text-decoration: variable.$deconone;
+  color: variable.$white;
+  background-color: variable.$orange;
+  padding: variable.$btn-padding;
+  border-radius: variable.$radius10;
+}
+
+.btn-secondary:hover {
+  color: variable.$orange;
+  background-color: variable.$white;
+  box-shadow: 0 0 10px variable.$orange;
+  transition: 0.2s ease-in-out;
+
 }
 
 // BTN MINEUR

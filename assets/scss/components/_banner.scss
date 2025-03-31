@@ -1,0 +1,11 @@
+@use "..//abstracts/variables" as variable;
+
+#banner-cta {
+    margin-top: 4rem;
+    background-color: variable.$apple;
+    .banner-cta__wrapper {
+        display: flex;
+        justify-content: space-between;
+        color: variable.$white;
+    }
+}

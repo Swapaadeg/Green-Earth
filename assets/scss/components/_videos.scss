@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as variable;
+
+.videos__wrapper {
+    text-align: center;
+    h2 {
+        text-align: end;
+    }
+    .videos-card {
+        display: flex;
+        width: 100%;
+        gap: 2rem;
+        .video {
+            border-radius: variable.$radius20;
+            height: 24vh;
+            margin-bottom: 2rem;
+        }
+    }
+}

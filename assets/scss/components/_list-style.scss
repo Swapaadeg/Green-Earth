@@ -1,11 +1,12 @@
 @use "../abstracts/variables" as variable;
 
 // RONDS VERTS SANS BG
-li {
-    display: flex;
-    align-items: center;
-}
-    
+
+.mission__wrapper {
+    li {
+        display: flex;
+        align-items: center;
+    }
     li::before {
         content: ""; 
         width: 6px; 
@@ -14,3 +15,15 @@ li {
         border: 3px solid variable.$forest;
         margin-right: 1rem;
     }
+}
+
+.footer__wrapper {
+
+    ul {
+        padding: 0;
+        li {
+        list-style: variable.$deconone;
+        padding-top: 0.5rem;
+        }
+    }
+}
