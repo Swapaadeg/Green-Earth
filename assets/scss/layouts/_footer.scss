@@ -1,0 +1,33 @@
+@use "../abstracts/variables" as variable;
+
+footer {
+    margin-top: 4rem;
+    background-color: variable.$forest;
+    .footer__wrapper {
+        color: variable.$white;
+        .navfooter {
+            display: flex;
+            justify-content: space-between;
+            text-align: justify;
+            width: 100%;
+            margin-bottom: 2rem;
+            .nav {
+                width: 100%;
+            }
+            .liens {
+                margin-left: 6rem;
+            }
+            h3 {
+                text-decoration: underline;
+            }
+            .google {
+                border-radius: variable.$radius20;
+                width: 100%;
+                height: 20vh;
+            }
+        }
+        .copy {
+            font-size: 0.8rem;
+        }
+    }
+}

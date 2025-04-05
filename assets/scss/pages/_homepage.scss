@@ -67,19 +67,18 @@
         .climat-actu {
             display: flex;
             gap: 2rem;
-            align-items: center;
+            align-items: stretch;
             margin-bottom: 2rem;
             width: 100%;
             img {
                 width: 49%;
-                height: 30vh;
                 object-fit: cover;
+                height: 40vh;
                 border-radius: variable.$radius20;
             }
             .climat-card {
                 background-color: variable.$white;
                 width: 49%;
-                height: 30vh;
                 padding: 4rem;
                 border-radius: variable.$radius20;
             }
@@ -100,41 +99,13 @@
     width: 100%;
     height: 30vh;
     .partners-img {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         gap: 5rem;
         img {
-            width: 20%;
+            width: 15%;
         }
     }
 }
 
-footer {
-    margin-top: 4rem;
-    background-color: variable.$forest;
-    .footer__wrapper {
-        color: variable.$white;
-        .navfooter {
-            display: flex;
-            justify-content: space-between;
-            text-align: justify;
-            width: 100%;
-            margin-bottom: 2rem;
-            .nav {
-                width: 100%;
-            }
-            .liens {
-                margin-left: 6rem;
-            }
-            h3 {
-                text-decoration: underline;
-            }
-            .google {
-                border-radius: variable.$radius20;
-            }
-        }
-        .copy {
-            font-size: 0.8rem;
-        }
-    }
-}

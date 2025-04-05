@@ -5,6 +5,7 @@
 body {
   background-color: #faf2e7;
   font-family: "DMSans", sans-serif;
+  margin: 0;
 }
 
 h1 {
@@ -191,7 +192,7 @@ p {
 }
 .cards img {
   width: 100%;
-  height: 45%;
+  height: 20vh;
   object-fit: cover;
   border-radius: 15px;
 }
@@ -274,6 +275,7 @@ p {
 }
 .videos__wrapper .videos-card .video {
   border-radius: 15px;
+  width: 100%;
   height: 24vh;
   margin-bottom: 2rem;
 }
@@ -287,6 +289,38 @@ p {
 }
 .header__wrapper img {
   width: 8%;
+}
+
+footer {
+  margin-top: 4rem;
+  background-color: #054d3b;
+}
+footer .footer__wrapper {
+  color: #ffffff;
+}
+footer .footer__wrapper .navfooter {
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+footer .footer__wrapper .navfooter .nav {
+  width: 100%;
+}
+footer .footer__wrapper .navfooter .liens {
+  margin-left: 6rem;
+}
+footer .footer__wrapper .navfooter h3 {
+  text-decoration: underline;
+}
+footer .footer__wrapper .navfooter .google {
+  border-radius: 15px;
+  width: 100%;
+  height: 20vh;
+}
+footer .footer__wrapper .copy {
+  font-size: 0.8rem;
 }
 
 .hero__wrapper {
@@ -353,20 +387,19 @@ p {
 #actualites .actualites__wrapper .climat-actu {
   display: flex;
   gap: 2rem;
-  align-items: center;
+  align-items: stretch;
   margin-bottom: 2rem;
   width: 100%;
 }
 #actualites .actualites__wrapper .climat-actu img {
   width: 49%;
-  height: 30vh;
   object-fit: cover;
+  height: 40vh;
   border-radius: 15px;
 }
 #actualites .actualites__wrapper .climat-actu .climat-card {
   background-color: #ffffff;
   width: 49%;
-  height: 30vh;
   padding: 4rem;
   border-radius: 15px;
 }
@@ -383,44 +416,38 @@ p {
   height: 30vh;
 }
 .partners__wrapper .partners-img {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 5rem;
 }
 .partners__wrapper .partners-img img {
-  width: 20%;
+  width: 15%;
 }
 
-footer {
-  margin-top: 4rem;
-  background-color: #054d3b;
+@media screen and (max-width: 1000px) {
+  .videos__wrapper {
+    text-align: center;
+  }
+  .videos__wrapper .videos-card {
+    flex-direction: column;
+    gap: 0;
+  }
+  .videos__wrapper .videos-card .video {
+    width: 100%;
+    height: 34vh;
+  }
+  .footer__wrapper .navfooter {
+    flex-direction: column;
+    align-items: start;
+  }
+  .footer__wrapper .navfooter .liens {
+    margin-left: 0rem !important;
+  }
+  .footer__wrapper .navfooter .liens .google {
+    width: 100%;
+  }
 }
-footer .footer__wrapper {
-  color: #ffffff;
-}
-footer .footer__wrapper .navfooter {
-  display: flex;
-  justify-content: space-between;
-  text-align: justify;
-  width: 100%;
-  margin-bottom: 2rem;
-}
-footer .footer__wrapper .navfooter .nav {
-  width: 100%;
-}
-footer .footer__wrapper .navfooter .liens {
-  margin-left: 6rem;
-}
-footer .footer__wrapper .navfooter h3 {
-  text-decoration: underline;
-}
-footer .footer__wrapper .navfooter .google {
-  border-radius: 15px;
-}
-footer .footer__wrapper .copy {
-  font-size: 0.8rem;
-}
-
 @media screen and (max-width: 768px) {
   .header__wrapper {
     flex-direction: column;
@@ -451,6 +478,52 @@ footer .footer__wrapper .copy {
   #mission .mission__wrapper .mission-list ul {
     flex-direction: column;
     padding: 0;
+  }
+  #actualites .actualites__wrapper .climat-actu {
+    flex-direction: column;
+    gap: 0rem;
+  }
+  #actualites .actualites__wrapper .climat-actu img {
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  #actualites .actualites__wrapper .climat-actu .climat-card {
+    width: 100%;
+  }
+  #actualites .actualites__wrapper .cards-actu {
+    flex-direction: column;
+  }
+  #actualites .actualites__wrapper .cards-actu .cards {
+    width: 100%;
+    height: 60vh;
+  }
+  #actualites .actualites__wrapper .cards-actu .cards img {
+    width: 100%;
+    height: 50%;
+  }
+  .gallerie__wrapper .gallerie-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallerie__wrapper .gallerie-grid img {
+    width: 100%;
+    height: 20vh;
+  }
+  .banner-cta__wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .partners__wrapper {
+    height: auto;
+  }
+  .partners__wrapper .partners-img {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .partners__wrapper .partners-img img {
+    width: 100%;
   }
 }
 
