@@ -4,7 +4,6 @@
 // CARTE AVEC BORDER 
 .card {
     @include mixins.carte;
-    height: 50%;
     padding: 1.5rem;
     h3::after {
         content: "";

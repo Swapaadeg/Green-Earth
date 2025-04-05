@@ -151,7 +151,9 @@ p {
 }
 
 .lien-souligne:hover {
-  text-shadow: 0 0 20px #ed732c;
+  background: linear-gradient(to right, #030303, #ed732c);
+  background-clip: text;
+  color: transparent;
   transition: 0.2s ease-in-out;
 }
 
@@ -161,7 +163,9 @@ p {
 }
 
 .link-footer:hover {
-  text-shadow: 0 0 20px #030303;
+  background: linear-gradient(to right, #030303, #799e29);
+  background-clip: text;
+  color: transparent;
   transition: 0.2s ease-in-out;
 }
 
@@ -169,7 +173,6 @@ p {
   background-color: #ffffff;
   border-radius: 10px;
   width: 32%;
-  height: 50%;
   padding: 1.5rem;
 }
 .card h3::after {

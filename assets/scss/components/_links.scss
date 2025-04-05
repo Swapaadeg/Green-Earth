@@ -5,7 +5,9 @@
 }
 
 .lien-souligne:hover {
-    text-shadow: 0 0 20px variable.$orange;
+    background: linear-gradient(to right, variable.$black, variable.$orange);
+    background-clip: text;
+    color: transparent;
     transition: 0.2s ease-in-out;
 }
 
@@ -16,6 +18,8 @@
 }
 
 .link-footer:hover {
-    text-shadow: 0 0 20px variable.$black;
+    background: linear-gradient(to right, variable.$black, variable.$apple);
+    background-clip: text;
+    color: transparent;
     transition: 0.2s ease-in-out;
 }
